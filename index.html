@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YOR SITE</title>
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Serif Display">
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Serif Display", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('bg.png');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      color: #a5adce;
+    }
+
+
+    .footer-link {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      color: #a5adce;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #a5adce;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #a5adce;
+      }
+
+    .list {
+      font-size: 16px;
+      line-height: 35px;
+      color: #a5adce;
+    }
+    .container {
+      max-width: 660px;
+      margin: 30px auto;
+    }
+
+    p {
+      line-height: 1.5;
+      margin: 10px 0;
+      padding: 0 20px;
+      text-align: center;
+      color: #949cbb;
+      
+    }
+
+    .p2 {
+        line-height: 1.5;
+        margin: 10px 0;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+    hr {
+      border: none;
+      border-top: 1px solid #a5adce;
+      margin: 20px 0;
+    }
+
+    img,
+    video,
+    iframe {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+
+    td {
+      padding: 10px;
+      border: none;
+      text-align: center;
+    }
+
+    .t-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #999;
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+
+    .t-link:active {
+      transform: scale(0.95);
+    }
+
+    .t-link:hover {
+      background-color: #f0f0f0;
+    }
+
+    .ht-link {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 10px;
+        background-color: transparent;
+        color: #737994;
+        text-decoration: none;
+        border: 1px solid #999999bd;
+        border-radius: 4px;
+        transition: transform 0.2s;
+    }
+    
+    .ht-link:active {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    
+    .ht-link:hover {
+        background-color: #303446;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px; /* adjust this value to your liking */
+    }
+    
+    .column {
+      flex-basis: 31.6%;
+      padding: 6px;
+    }
+    
+    .row2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px; /* adjust this value to your liking */
+    }
+    
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 90%; 
+      margin: 0 auto; 
+      border-radius: 10px; /* Add this line */
+      width: 200px;
+      height: 250px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      padding: 2px 16px;
+      
+    }
+    
+    .card img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px; /* Add this line */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    
+    .card:active {
+      transform: scale(0.95);
+      transition: transform 0.2s;
+    }
+
+    .card2 {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 90%; 
+      margin: 0 auto; 
+      border-radius: 10px; /* Add this line */
+      width: 638px;
+      height: 180px;
+      background-color: #696969;
+    }
+
+    .card2-link {
+      color: #a5adcb;
+    }
+
+    .card2-link:hover {
+      text-align: center;
+      size: 5px;
+      color: #f0c6c6;
+    }
+
+    .foot {
+      text-align: center;
+      size: 5px;
+      color: #6e738d;
+    }
+
+    .foot-link {
+      text-align: center;
+      size: 5px;
+      color: #a5adcb;
+    }
+
+    .foot-link:hover {
+      text-align: center;
+      size: 5px;
+      color: #f0c6c6;
+    }
+
+    .foot-img {
+      padding-top: 20px;
+    }
+
+    .h1-img {
+      height: 50px;
+      width: auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .container h3 {
+      padding-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="h1-img" src="header.png">
+    <hr>
+    <p>Actor | Photographer | Developer | Creative Writer</p>
+    <hr>
+    <h2>Links:</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://www.instagram.com/" target="_blank"><img src="cards\instagram.png" alt="GitHub"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://www.linkedin.com/" target="_blank"><img src="cards\linkedin.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://twitter.com/" target="_blank"><img src="cards\twitter.png" alt="YouTube"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://www.youtube.com/" target="_blank"><img src="cards\youtube.png" alt="Reddit"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://telegram.org/" target="_blank"><img src="cards\telegram.png" alt="Bandcamp"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://discord.com/" target="_blank"><img src="cards\discord.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://www.whatsapp.com/" target="_blank"><img src="cards\whatsapp.png" alt="Tumblr"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://www.twitch.tv/" target="_blank"><img src="cards\twitch.png" alt="Twitch"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://element.io/" target="_blank"><img src="cards\element.png" alt="Ao3"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h2>More Info:</h2>
+    <div class="card2">
+      <div class="container">
+        <h3><b>Business email:</b></h3> 
+        <p><a class="card2-link" href="yourmail@mail.com">yourmail@mail.com</a></p>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="container">
+        <h3><b>Telegram:</b></h3> 
+        <p><a class="foot-link" href="https://t.me/closed_IS_BOT/">press</a></p>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="container">
+        <h4><b>Additionally:</b></h4> 
+        <p>Ability to add a link <a class="foot-link" href="https://cyberio.pro/">here</a>.</p>
+        <p>Choose any design for your personalized page.</p>
+      </div>
+    </div>
+    <hr>
+    <h2>Tip Jar:</h2>
+    <div class="row2">
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://ko-fi.com" target="_blank"><img src="cards\ko-fi.png" alt="Ko-Fi"></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="card">
+          <a href="https://paypal.me" target="_blank"><img src="cards\paypal.png" alt="PayPal"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p class="foot">we use libraries <a class="foot-link" href="https://github.com/catppuccin/catppuccin#-palette" target="_blank" >Macchiato</a> color pallet from the <a href="https://github.com/catppuccin" class="foot-link" target="_blank" >Catppuccin</a> color pallets</p>
+    </footer>
+</body>
